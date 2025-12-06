@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gym Workout Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Gym Workout Planner</h1>
+  </header>
+
+  <main class="main">
+    <!-- FORM SECTION -->
+    <section id="add-workout" class="card">
+      <h2>Add a Workout</h2>
+      <form id="workout-form">
+        <div class="form-row">
+          <label for="memberName">Your Name</label>
+          <input type="text" id="memberName" name="memberName" required />
+        </div>
+
+        <div class="form-row">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+
+        <div class="form-row">
+          <label for="type">Workout Type</label>
+          <select id="type" name="type" required>
+            <option value="">-- Select --</option>
+            <option value="Strength">Strength</option>
+            <option value="Cardio">Cardio</option>
+            <option value="Hypertrophy">Hypertrophy</option>
+            <option value="Mobility">Mobility</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="duration">Duration (minutes)</label>
+          <input type="number" id="duration" name="duration" min="5" max="300" required />
+        </div>
+
+        <div class="form-row">
+          <label for="intensity">Intensity (1-10)</label>
+          <input type="number" id="intensity" name="intensity" min="1" max="10" required />
+        </div>
+
+        <button type="submit" class="btn">Add Workout</button>
+        <p id="form-error" class="error-msg"></p>
+        <p id="form-success" class="success-msg"></p>
+      </form>
+    </section>
+
+    <!-- TABLE SECTION -->
+    <section id="workouts-table" class="card">
+      <h2>Planned Workouts</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Member</th>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Duration</th>
+            <th>Intensity</th>
+          </tr>
+        </thead>
+        <tbody

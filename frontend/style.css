@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.header {
+  padding: 1rem 2rem;
+  background: #020617;
+  text-align: center;
+}
+
+.card {
+  background: #020617;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+input, select {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #1f2937;
+  background: #0f172a;
+  color: white;
+}
+
+.btn {
+  padding: 0.7rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.error-msg { color: #f87171; }
+.success-msg { color: #4ade80; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #1f2937;
+}
